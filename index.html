@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ирк_студия — Юлия, косметолог по телу · Иркутск</title>
+  <meta name="description" content="Косметолог по телу в Иркутске. Депиляция, LPG-массаж, обёртывания. Запись онлайн. Ул. Декабрьских событий, 47Б." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- =============================================
+     NAV
+     ============================================= -->
+<nav class="nav" role="navigation" aria-label="Основная навигация">
+  <div class="nav__inner">
+    <a href="#hero" class="nav__logo" aria-label="Ирк_студия — на главную">
+      <div class="nav__logo-icon" aria-hidden="true">и</div>
+      <span class="nav__logo-name">Ирк_студия</span>
+    </a>
+
+    <!-- Desktop nav links -->
+    <div class="nav__links" role="list">
+      <a href="#about" role="listitem">Обо мне</a>
+      <a href="#services" role="listitem">Услуги</a>
+      <a href="#price" role="listitem">Прайс</a>
+      <a href="#results" role="listitem">Результаты</a>
+      <a href="#contacts" role="listitem">Контакты</a>
+    </div>
+
+    <div class="nav__right">
+      <!-- WhatsApp icon (mobile) -->
+      <a href="https://wa.me/79140000000" class="nav__wa" aria-label="Написать в WhatsApp" target="_blank" rel="noopener">●</a>
+      <!-- Desktop CTA -->
+      <a href="#contacts" class="btn btn-primary nav__btn">Записаться</a>
+      <!-- Burger -->
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu role="dialog" aria-label="Мобильное меню">
+  <a href="#about">Обо мне</a>
+  <a href="#services">Услуги</a>
+  <a href="#price">Прайс</a>
+  <a href="#results">Результаты</a>
+  <a href="#contacts">Контакты</a>
+  <a href="#contacts" class="mob-cta btn btn-primary">Записаться</a>
+</div>
+
+
+<!-- =============================================
+     HERO
+     ============================================= -->
+<section id="hero" aria-label="Главный экран">
+  <div class="hero__inner">
+    <!-- Text column -->
+    <div class="hero__text">
+      <p class="hero__eyebrow">косметолог по телу · Иркутск</p>
+      <h1>Забота о теле, к которой хочется <em>возвращаться</em></h1>
+
+      <!-- Mobile photo -->
+      <div class="hero__photo-mob">
+        <div class="ph ph-rose hero__photo" aria-label="Фото кабинета">
+          <span>photo · hero</span>
+        </div>
+        <div class="stamp">🌿 в центре города</div>
+      </div>
+
+      <p class="hero__lead">Я Юлия — косметолог по телу с опытом 8 лет. Депиляция, LPG массаж, обёртывания — с комфортом и заботой.</p>
+
+      <div class="hero__btns">
+        <a href="#contacts" class="btn btn-primary btn-lg">Записаться</a>
+        <a href="#services" class="btn btn-ghost btn-lg">Посмотреть услуги</a>
+      </div>
+
+      <div class="hero__meta" aria-label="Ключевые цифры">
+        <div class="hero__meta-item">
+          <div class="hero__meta-num">8</div>
+          <div class="hero__meta-label">лет опыта<br>с телом и кожей</div>
+        </div>
+        <div class="hero__meta-item">
+          <div class="hero__meta-num">3</div>
+          <div class="hero__meta-label">направления<br>ухода</div>
+        </div>
+        <div class="hero__meta-item">
+          <div class="hero__meta-num">100%</div>
+          <div class="hero__meta-label">индивидуальный<br>подход</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo column -->
+    <div class="hero__photo-wrap">
+      <div class="ph ph-rose hero__photo" aria-label="Фото кабинета">
+        <span>photo · кабинет / композиция через детали</span>
+      </div>
+      <div class="stamp">🌿 студия в центре Иркутска</div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust strip -->
+<div class="trust-strip reveal" aria-label="Цитата">
+  <div class="trust-strip__deco">— 🌿 —</div>
+  <p class="trust-strip__quote">
+    Вы не просто приходите на процедуру — вы приходите <em>за результатом и спокойствием</em>. Я работаю так, чтобы вам было комфортно, безопасно и понятно на каждом этапе.
+  </p>
+</div>
+
+
+<!-- =============================================
+     ПРЕИМУЩЕСТВА
+     ============================================= -->
+<section id="advantages" aria-labelledby="adv-title">
+  <div class="wrap">
+    <div class="advantages__header">
+      <div class="section-header">
+        <p class="eyebrow">Почему выбирают меня</p>
+        <h2 id="adv-title" class="section-title">Почему ко мне <em>возвращаются</em></h2>
+      </div>
+      <p class="side-note">Не продаю шаблонные процедуры. Каждый сеанс начинается с разговора — чтобы понять, что нужно именно вам прямо сейчас.</p>
+    </div>
+
+    <div class="adv-grid">
+      <div class="adv reveal">
+        <div class="adv__num">01</div>
+        <h3 class="adv__title">8 лет опыта в работе с телом и кожей</h3>
+        <p class="adv__text">Постоянное обучение, обновление техник и продуктов — чтобы результат был стабильным.</p>
+      </div>
+      <div class="adv reveal">
+        <div class="adv__num">02</div>
+        <h3 class="adv__title">Индивидуальный подход без шаблонных решений</h3>
+        <p class="adv__text">Подбираю процедуры и материалы под вашу кожу, запрос и ритм жизни.</p>
+      </div>
+      <div class="adv reveal">
+        <div class="adv__num">03</div>
+        <h3 class="adv__title">Чистый, уютный кабинет, где приятно находиться</h3>
+        <p class="adv__text">Стерильность, мягкий свет, спокойная атмосфера — чтобы вы расслабились с первой минуты.</p>
+      </div>
+      <div class="adv reveal">
+        <div class="adv__num">04</div>
+        <h3 class="adv__title">Удобное расположение в центре города</h3>
+        <p class="adv__text">Иркутск, ул. Декабрьских событий, 47Б. До кабинета легко добраться в любой день недели.</p>
+      </div>
+      <div class="adv reveal">
+        <div class="adv__num">05</div>
+        <h3 class="adv__title">Внимательное отношение к каждому клиенту</h3>
+        <p class="adv__text">Помню ваши предпочтения, особенности кожи и цели — не начинаю с нуля каждый раз.</p>
+      </div>
+      <div class="adv reveal">
+        <div class="adv__num">06</div>
+        <h3 class="adv__title">Работа на результат, а не «для галочки»</h3>
+        <p class="adv__text">Честно говорю, что нужно, что подождёт, и как добиться стойкого эффекта вместе.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     ОБО МНЕ
+     ============================================= -->
+<section id="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="about__inner">
+      <!-- Photo (desktop only) -->
+      <div class="about__photo" aria-hidden="true">
+        <div class="about__photo-wrap">
+          <div class="ph ph-warm">
+            <span>photo · about</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="about__text">
+        <p class="eyebrow">Знакомство</p>
+        <h2 id="about-title" class="section-title" style="margin-bottom:24px;">Обо <em>мне</em></h2>
+
+        <p>Я Юлия — косметолог по телу с опытом более 8 лет.</p>
+        <p>В своей работе я не делаю одинаково для всех. Каждая кожа, каждое тело — разные, поэтому я подбираю процедуры и материалы индивидуально.</p>
+        <p>Для меня важно не просто выполнить услугу, а чтобы вы увидели результат и чувствовали себя увереннее.</p>
+        <p>Ко мне возвращаются за комфортом, аккуратностью и внимательным подходом.</p>
+
+        <div class="about__sig">
+          <div class="about__sig-letter" aria-hidden="true">Ю</div>
+          <div class="about__sig-name">
+            Юлия Иркутская<br>
+            косметолог по телу · 8 лет практики
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     УСЛУГИ
+     ============================================= -->
+<section id="services" aria-labelledby="svc-title">
+  <div class="wrap">
+    <div class="services__header">
+      <div class="section-header">
+        <p class="eyebrow">— 🌿 услуги</p>
+        <h2 id="svc-title" class="section-title"><em>Услуги</em></h2>
+      </div>
+      <p class="side-note">Три направления работы — каждое со своей целью, техникой и результатом. Выбираем вместе на консультации.</p>
+    </div>
+
+    <ul class="svc-list" role="list">
+      <!-- Депиляция -->
+      <li class="svc reveal">
+        <div class="ph ph-rose svc__photo" aria-label="Депиляция">
+          <span>01</span>
+        </div>
+        <div class="svc__info">
+          <div class="svc__num">01</div>
+          <h3 class="svc__name">Депиляция</h3>
+          <p class="svc__tag">сахар / воск</p>
+          <p class="svc__desc">Бережное удаление нежелательной растительности с долгим эффектом. Подбираю метод и состав под тип кожи и чувствительность.</p>
+          <p class="svc__price">от 000 ₽</p>
+        </div>
+      </li>
+
+      <!-- LPG массаж -->
+      <li class="svc reveal">
+        <div class="ph ph-ivory svc__photo" aria-label="LPG массаж">
+          <span>02</span>
+        </div>
+        <div class="svc__info">
+          <div class="svc__num">02</div>
+          <h3 class="svc__name">LPG массаж</h3>
+          <p class="svc__tag">аппаратный массаж</p>
+          <p class="svc__desc">Аппаратный массаж для уменьшения объёмов, улучшения лимфотока и работы с отёками. Видимый результат после курса.</p>
+          <p class="svc__price">от 000 ₽</p>
+        </div>
+      </li>
+
+      <!-- Обёртывания -->
+      <li class="svc reveal">
+        <div class="ph ph-warm svc__photo" aria-label="Обёртывания">
+          <span>03</span>
+        </div>
+        <div class="svc__info">
+          <div class="svc__num">03</div>
+          <h3 class="svc__name">Обёртывания</h3>
+          <p class="svc__tag">уход для тела</p>
+          <p class="svc__desc">Уходовые процедуры для тела, направленные на питание кожи, моделирование и глубокое увлажнение.</p>
+          <p class="svc__price">от 000 ₽</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- =============================================
+     ПРАЙС
+     ============================================= -->
+<section id="price" aria-labelledby="price-title">
+  <div class="wrap">
+    <div class="price__inner">
+      <!-- Intro -->
+      <div class="price-intro">
+        <p class="eyebrow">Стоимость</p>
+        <h2 id="price-title" class="section-title"><em>Стоимость</em></h2>
+        <p style="margin-top:16px; font-size:14px; color:var(--ink-mute); line-height:1.7;">
+          Финальная стоимость рассчитывается индивидуально на консультации — в зависимости от зоны, техники и вашего запроса.
+        </p>
+      </div>
+
+      <!-- Price list -->
+      <div>
+        <ul class="price-list" role="list">
+          <li class="price-row reveal">
+            <div class="price-row__info">
+              <div class="price-row__name">Депиляция (сахар / воск)</div>
+              <div class="price-row__sub">Голени · бикини · подмышки · руки и другие зоны</div>
+            </div>
+            <div class="price-row__val">от 000 ₽</div>
+          </li>
+          <li class="price-row reveal">
+            <div class="price-row__info">
+              <div class="price-row__name">LPG массаж</div>
+              <div class="price-row__sub">Курсом или разовый сеанс · работа с отёками и лимфой</div>
+            </div>
+            <div class="price-row__val">от 000 ₽</div>
+          </li>
+          <li class="price-row reveal">
+            <div class="price-row__info">
+              <div class="price-row__name">Обёртывания</div>
+              <div class="price-row__sub">Питательные, разогревающие, моделирующие составы</div>
+            </div>
+            <div class="price-row__val">от 000 ₽</div>
+          </li>
+          <li class="price-row reveal">
+            <div class="price-row__info">
+              <div class="price-row__name">Комбинированная программа</div>
+              <div class="price-row__sub">LPG + обёртывание · подбирается индивидуально</div>
+            </div>
+            <div class="price-row__val">от 000 ₽</div>
+          </li>
+          <li class="price-row reveal">
+            <div class="price-row__info">
+              <div class="price-row__name">Консультация перед записью</div>
+              <div class="price-row__sub">Очно или в мессенджере</div>
+            </div>
+            <div class="price-row__val free">бесплатно</div>
+          </li>
+        </ul>
+        <p class="price-note">🌿 Цены ниже — стартовые. Финальная стоимость рассчитывается на консультации в зависимости от зоны, объёма работы и подобранных материалов.</p>
+        <div class="price__cta">
+          <a href="#contacts" class="btn btn-primary btn-full">Записаться для уточнения цены</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     РЕЗУЛЬТАТЫ
+     ============================================= -->
+<section id="results" aria-labelledby="results-title">
+  <div class="wrap">
+    <div class="results__header">
+      <div class="section-header">
+        <p class="eyebrow">До и после</p>
+        <h2 id="results-title" class="section-title"><em>Результаты</em></h2>
+      </div>
+      <p class="side-note">Результаты моих клиентов — без фильтров и приукрашивания. Реальные изменения после реальных процедур.</p>
+    </div>
+
+    <div class="results-grid">
+      <!-- 1 -->
+      <div class="ba-card reveal">
+        <div class="ba-pair">
+          <div class="ba-half">
+            <div class="ph ph-rose"><span>до</span></div>
+            <span class="ba-label">до</span>
+          </div>
+          <div class="ba-half">
+            <div class="ph ph-ivory"><span>после</span></div>
+            <span class="ba-label after">после</span>
+          </div>
+        </div>
+        <div class="ba-foot">
+          <div class="ba-foot__name">Анна, 34</div>
+          <div class="ba-foot__proc">LPG · 6 сеансов</div>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="ba-card reveal">
+        <div class="ba-pair">
+          <div class="ba-half">
+            <div class="ph ph-warm"><span>до</span></div>
+            <span class="ba-label">до</span>
+          </div>
+          <div class="ba-half">
+            <div class="ph ph-ivory"><span>после</span></div>
+            <span class="ba-label after">после</span>
+          </div>
+        </div>
+        <div class="ba-foot">
+          <div class="ba-foot__name">Мария, 29</div>
+          <div class="ba-foot__proc">Обёртывания · курс</div>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="ba-card reveal">
+        <div class="ba-pair">
+          <div class="ba-half">
+            <div class="ph ph-rose"><span>до</span></div>
+            <span class="ba-label">до</span>
+          </div>
+          <div class="ba-half">
+            <div class="ph ph-warm"><span>после</span></div>
+            <span class="ba-label after">после</span>
+          </div>
+        </div>
+        <div class="ba-foot">
+          <div class="ba-foot__name">Ольга, 42</div>
+          <div class="ba-foot__proc">LPG + обёртывания</div>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="ba-card reveal">
+        <div class="ba-pair">
+          <div class="ba-half">
+            <div class="ph ph-ivory"><span>до</span></div>
+            <span class="ba-label">до</span>
+          </div>
+          <div class="ba-half">
+            <div class="ph ph-rose"><span>после</span></div>
+            <span class="ba-label after">после</span>
+          </div>
+        </div>
+        <div class="ba-foot">
+          <div class="ba-foot__name">Елена, 38</div>
+          <div class="ba-foot__proc">LPG · работа с лимфой</div>
+        </div>
+      </div>
+      <!-- 5 -->
+      <div class="ba-card reveal">
+        <div class="ba-pair">
+          <div class="ba-half">
+            <div class="ph ph-warm"><span>до</span></div>
+            <span class="ba-label">до</span>
+          </div>
+          <div class="ba-half">
+            <div class="ph ph-ivory"><span>после</span></div>
+            <span class="ba-label after">после</span>
+          </div>
+        </div>
+        <div class="ba-foot">
+          <div class="ba-foot__name">Дарья, 27</div>
+          <div class="ba-foot__proc">Депиляция · курсом</div>
+        </div>
+      </div>
+      <!-- 6 -->
+      <div class="ba-card reveal">
+        <div class="ba-pair">
+          <div class="ba-half">
+            <div class="ph ph-rose"><span>до</span></div>
+            <span class="ba-label">до</span>
+          </div>
+          <div class="ba-half">
+            <div class="ph ph-warm"><span>после</span></div>
+            <span class="ba-label after">после</span>
+          </div>
+        </div>
+        <div class="ba-foot">
+          <div class="ba-foot__name">Светлана, 45</div>
+          <div class="ba-foot__proc">Комплексная программа</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     ОТЗЫВЫ
+     ============================================= -->
+<section id="reviews" aria-labelledby="reviews-title">
+  <div class="wrap">
+    <div class="section-header" style="margin-bottom:32px;">
+      <p class="eyebrow">Говорят клиенты</p>
+      <h2 id="reviews-title" class="section-title"><em>Отзывы</em></h2>
+    </div>
+
+    <!-- Mobile layout -->
+    <div class="reviews-mobile" aria-label="Отзывы клиентов">
+      <!-- Featured -->
+      <div class="review-featured reveal">
+        <p class="rv__text">«Юлия делает депиляцию настолько аккуратно, что я перестала бояться этой процедуры. Кабинет уютный, всё стерильно, чувствуется забота с первой минуты.»</p>
+        <div class="rv__author">
+          <div class="rv__avatar" aria-hidden="true">А</div>
+          <div class="rv__info">
+            <div class="rv__name">Алина К.</div>
+            <div class="rv__since">клиент с 2024</div>
+          </div>
+          <div class="rv__proc">депиляция</div>
+        </div>
+      </div>
+
+      <!-- Mini reviews -->
+      <div class="review-mini reveal">
+        <p class="rv__text">«После курса LPG ушли отёки на ногах и стало заметно меньше объёмов в бёдрах. Юлия объясняет всё спокойно, без давления и продаж.»</p>
+        <div class="rv__author">
+          <div class="rv__avatar" aria-hidden="true">М</div>
+          <div class="rv__info">
+            <div class="rv__name">Мария П.</div>
+            <div class="rv__since">клиент с 2023</div>
+          </div>
+          <div class="rv__proc">LPG</div>
+        </div>
+      </div>
+      <div class="review-mini reveal">
+        <p class="rv__text">«Хожу к Юлии больше двух лет. После процедуры выходишь не только с результатом, но и с ощущением, что о тебе позаботились.»</p>
+        <div class="rv__author">
+          <div class="rv__avatar" aria-hidden="true">Е</div>
+          <div class="rv__info">
+            <div class="rv__name">Елена С.</div>
+            <div class="rv__since">постоянный клиент</div>
+          </div>
+          <div class="rv__proc">комплекс</div>
+        </div>
+      </div>
+      <div class="review-mini reveal">
+        <p class="rv__text">«Обёртывания — моя любимая процедура у Юлии. Кожа после первого же раза становится мягче и ровнее.»</p>
+        <div class="rv__author">
+          <div class="rv__avatar" aria-hidden="true">О</div>
+          <div class="rv__info">
+            <div class="rv__name">Ольга Д.</div>
+            <div class="rv__since">клиент с 2025</div>
+          </div>
+          <div class="rv__proc">обёртывания</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop carousel -->
+    <div class="reviews-desktop" aria-label="Карусель отзывов">
+      <div class="reviews-carousel">
+        <!-- Page 1 -->
+        <div class="reviews-page is-active" data-page="0">
+          <div class="rv-card">
+            <p class="rv__text">«Юлия делает депиляцию настолько аккуратно, что я перестала бояться этой процедуры. Кабинет уютный, всё стерильно, чувствуется забота с первой минуты.»</p>
+            <div class="rv__author">
+              <div class="rv__avatar" aria-hidden="true">А</div>
+              <div class="rv__info">
+                <div class="rv__name">Алина К.</div>
+                <div class="rv__since">клиент с 2024</div>
+              </div>
+              <div class="rv__proc">депиляция</div>
+            </div>
+          </div>
+          <div class="rv-card">
+            <p class="rv__text">«После курса LPG ушли отёки на ногах и стало заметно меньше объёмов в бёдрах. Юлия объясняет всё спокойно, без давления и продаж.»</p>
+            <div class="rv__author">
+              <div class="rv__avatar" aria-hidden="true">М</div>
+              <div class="rv__info">
+                <div class="rv__name">Мария П.</div>
+                <div class="rv__since">клиент с 2023</div>
+              </div>
+              <div class="rv__proc">LPG</div>
+            </div>
+          </div>
+          <div class="rv-card">
+            <p class="rv__text">«Хожу к Юлии больше двух лет. Это тот случай, когда после процедуры выходишь не только с результатом, но и с ощущением, что о тебе позаботились.»</p>
+            <div class="rv__author">
+              <div class="rv__avatar" aria-hidden="true">Е</div>
+              <div class="rv__info">
+                <div class="rv__name">Елена С.</div>
+                <div class="rv__since">постоянный клиент</div>
+              </div>
+              <div class="rv__proc">комплекс</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page 2 -->
+        <div class="reviews-page" data-page="1">
+          <div class="rv-card">
+            <p class="rv__text">«Обёртывания — моя любимая процедура у Юлии. Кожа после первого же раза становится мягче и ровнее.»</p>
+            <div class="rv__author">
+              <div class="rv__avatar" aria-hidden="true">О</div>
+              <div class="rv__info">
+                <div class="rv__name">Ольга Д.</div>
+                <div class="rv__since">клиент с 2025</div>
+              </div>
+              <div class="rv__proc">обёртывания</div>
+            </div>
+          </div>
+          <div class="rv-card">
+            <p class="rv__text">«Очень благодарна за индивидуальный подход. У меня чувствительная кожа, и Юлия подобрала такой состав, что вообще не было раздражений.»</p>
+            <div class="rv__author">
+              <div class="rv__avatar" aria-hidden="true">Д</div>
+              <div class="rv__info">
+                <div class="rv__name">Дарья В.</div>
+                <div class="rv__since">клиент с 2024</div>
+              </div>
+              <div class="rv__proc">депиляция</div>
+            </div>
+          </div>
+          <div class="rv-card">
+            <p class="rv__text">«Чувствуется опыт. Юлия сразу видит, что нужно именно тебе. Уже после первых сеансов LPG увидела изменения.»</p>
+            <div class="rv__author">
+              <div class="rv__avatar" aria-hidden="true">С</div>
+              <div class="rv__info">
+                <div class="rv__name">Светлана М.</div>
+                <div class="rv__since">клиент с 2023</div>
+              </div>
+              <div class="rv__proc">LPG + обёртывания</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="carousel-controls" role="group" aria-label="Навигация по карусели">
+          <button class="carousel-btn" id="carousel-prev" aria-label="Предыдущая страница">&#8592;</button>
+          <div class="carousel-dots">
+            <button class="carousel-dot is-active" data-dot="0" aria-label="Страница 1"></button>
+            <button class="carousel-dot" data-dot="1" aria-label="Страница 2"></button>
+          </div>
+          <button class="carousel-btn" id="carousel-next" aria-label="Следующая страница">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     КОНТАКТЫ
+     ============================================= -->
+<section id="contacts" aria-labelledby="contacts-title">
+  <div class="wrap">
+    <p class="eyebrow">Записаться</p>
+    <h2 id="contacts-title" class="section-title">Буду рада видеть вас на <em>процедурах</em> 🤍</h2>
+    <p class="contacts__sub">Для записи нажмите кнопку ниже или напишите в удобный мессенджер. Я отвечу в течение часа в рабочее время.</p>
+
+    <div class="contacts__body">
+      <!-- Info blocks -->
+      <div class="info-blocks">
+        <div class="info-block">
+          <div class="info-block__icon" aria-hidden="true">📍</div>
+          <div>
+            <div class="info-block__label">Адрес</div>
+            <div class="info-block__val">г. Иркутск, ул. Декабрьских событий, 47Б</div>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-block__icon" aria-hidden="true">🕐</div>
+          <div>
+            <div class="info-block__label">Часы работы</div>
+            <div class="info-block__val">Пн–Сб · 10:00 — 20:00<br>Вс · по записи</div>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-block__icon" aria-hidden="true">📞</div>
+          <div>
+            <div class="info-block__label">Телефон</div>
+            <div class="info-block__val"><a href="tel:+79140000000">+7 914 000-00-00</a></div>
+          </div>
+        </div>
+        <div class="info-block">
+          <div class="info-block__icon" aria-hidden="true">💬</div>
+          <div>
+            <div class="info-block__label">Мессенджеры</div>
+            <div class="msg-pills">
+              <a href="https://wa.me/79140000000" class="msg-pill msg-pill--wa" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
+              <a href="https://t.me/irk_studio" class="msg-pill msg-pill--tg" target="_blank" rel="noopener" aria-label="Telegram">Telegram</a>
+              <a href="https://instagram.com/irk_studio" class="msg-pill msg-pill--ig" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA card -->
+      <div class="cta-card reveal" role="complementary" aria-label="Запись">
+        <h3>В один клик — и я на связи</h3>
+        <p>Напишите мне в WhatsApp — расскажите, что вас интересует, и я подберу удобное время для визита или онлайн-консультации.</p>
+        <a href="https://wa.me/79140000000" class="btn btn-white" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Map placeholder -->
+    <div class="map-placeholder reveal" role="img" aria-label="Карта расположения кабинета">
+      <div class="map-marker" aria-hidden="true"></div>
+      <div class="map-placeholder__label" aria-hidden="true">map · 2gis / yandex embed</div>
+      <div class="map-addr-card" aria-hidden="true">
+        <strong>Ирк_студия</strong>
+        ул. Декабрьских событий, 47Б<br>
+        г. Иркутск
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FOOTER
+     ============================================= -->
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="footer__grid">
+      <!-- Brand -->
+      <div class="footer__brand">
+        <div class="footer__brand-logo">
+          <div class="footer__logo-icon" aria-hidden="true">и</div>
+          <span class="footer__logo-name">Ирк_студия</span>
+        </div>
+        <p class="footer__desc">Частный косметолог по телу.<br>Иркутск, ул. Декабрьских событий, 47Б.</p>
+      </div>
+
+      <!-- Footer cols (mobile: 2-col grid; desktop: individual columns via display:contents) -->
+      <div class="footer__cols">
+        <!-- Разделы -->
+        <div class="footer-col">
+          <div class="footer-col__title">Разделы</div>
+          <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#price">Стоимость</a></li>
+            <li><a href="#results">Результаты</a></li>
+          </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div class="footer-col">
+          <div class="footer-col__title">Контакты</div>
+          <ul>
+            <li><a href="tel:+79140000000">+7 914 000-00-00</a></li>
+            <li><a href="https://wa.me/79140000000" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://t.me/irk_studio" target="_blank" rel="noopener">Telegram</a></li>
+            <li><a href="https://instagram.com/irk_studio" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+
+        <!-- Часы -->
+        <div class="footer-col">
+          <div class="footer-col__title">Часы работы</div>
+          <p>Пн–Сб · 10:00 — 20:00<br>Вс · по записи</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div>© 2026 · Ирк_студия · Юлия, косметолог по телу</div>
+      <div class="footer__bottom-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Согласие на обработку данных</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- =============================================
+     FLOAT CTA (mobile)
+     ============================================= -->
+<div class="float-cta" role="complementary" aria-label="Быстрая запись">
+  <a href="https://wa.me/79140000000" class="btn btn-primary" target="_blank" rel="noopener">
+    Записаться в WhatsApp
+  </a>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
