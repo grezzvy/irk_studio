@@ -4,10 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ирк_студия — Юлия, косметолог по телу · Иркутск</title>
-  <meta name="description" content="Косметолог по телу в Иркутске. Депиляция, LPG-массаж, обёртывания. Запись онлайн. Ул. Декабрьских событий, 47Б." />
+  <meta name="description" content="Косметолог по телу в Иркутске. Депиляция, LPG-массаж, обёртывания. Онлайн-запись. Ул. Декабрьских событий, 47Б, 7 этаж, офис 701." />
+  <meta name="keywords" content="косметолог по телу Иркутск, депиляция Иркутск, LPG массаж Иркутск, обёртывание тела Иркутск, антицеллюлитный массаж Иркутск, сахарная депиляция Иркутск, косметолог Юлия Иркутск" />
+  <meta name="author" content="Юлия Ефремова" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ДОМЕН.RU/" />
+
+  <!-- Open Graph (соцсети, мессенджеры) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ДОМЕН.RU/" />
+  <meta property="og:title" content="Ирк_студия — Юлия, косметолог по телу · Иркутск" />
+  <meta property="og:description" content="Депиляция, LPG-массаж, обёртывания. Индивидуальный подход, 8 лет опыта. Запись онлайн." />
+  <meta property="og:image" content="https://ДОМЕН.RU/img/og-image.jpg" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:site_name" content="Ирк_студия" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ирк_студия — косметолог по телу · Иркутск" />
+  <meta name="twitter:description" content="Депиляция, LPG-массаж, обёртывания. 8 лет опыта. Запись онлайн." />
+  <meta name="twitter:image" content="https://ДОМЕН.RU/img/og-image.jpg" />
+
+  <!-- Schema.org — локальный бизнес -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Ирк_студия",
+    "description": "Косметолог по телу в Иркутске. Депиляция, LPG-массаж, обёртывания.",
+    "url": "https://ДОМЕН.RU/",
+    "telephone": "+79500809535",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Декабрьских событий, 47Б, офис 701",
+      "addressLocality": "Иркутск",
+      "addressRegion": "Иркутская область",
+      "addressCountry": "RU"
+    },
+    "openingHours": "Mo-Su 10:00-20:00",
+    "sameAs": [
+      "https://t.me/milayayulka",
+      "https://www.instagram.com/irk_studio",
+      "https://vk.ru/irk__studio"
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="fonts/GreatVibes-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -18,7 +63,6 @@
 <nav class="nav" role="navigation" aria-label="Основная навигация">
   <div class="nav__inner">
     <a href="#hero" class="nav__logo" aria-label="Ирк_студия — на главную">
-      <div class="nav__logo-icon" aria-hidden="true">и</div>
       <span class="nav__logo-name">Ирк_студия</span>
     </a>
 
@@ -32,10 +76,8 @@
     </div>
 
     <div class="nav__right">
-      <!-- WhatsApp icon (mobile) -->
-      <a href="https://wa.me/79140000000" class="nav__wa" aria-label="Написать в WhatsApp" target="_blank" rel="noopener">●</a>
       <!-- Desktop CTA -->
-      <a href="#contacts" class="btn btn-primary nav__btn">Записаться</a>
+      <a href="https://dikidi.net/292465" class="btn btn-primary nav__btn" target="_blank" rel="noopener">Записаться</a>
       <!-- Burger -->
       <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
         <span></span>
@@ -53,7 +95,7 @@
   <a href="#price">Прайс</a>
   <a href="#results">Результаты</a>
   <a href="#contacts">Контакты</a>
-  <a href="#contacts" class="mob-cta btn btn-primary">Записаться</a>
+  <a href="https://dikidi.net/292465" class="mob-cta btn btn-primary" target="_blank" rel="noopener">Записаться</a>
 </div>
 
 
@@ -69,16 +111,37 @@
 
       <!-- Mobile photo -->
       <div class="hero__photo-mob">
-        <div class="ph ph-rose hero__photo" aria-label="Фото кабинета">
-          <span>photo · hero</span>
+        <div class="hero-carousel" data-hero-carousel-mob>
+          <div class="hero-carousel__window">
+            <div class="hero-carousel__track" data-hero-track>
+              <div class="hero-carousel__slide">
+                <img src="img/hero/cabinet.webp" alt="Кабинет Ирк_студии" class="hero__photo">
+              </div>
+              <div class="hero-carousel__slide">
+                <img src="img/hero/cabinet2.webp" alt="Кабинет Ирк_студии" class="hero__photo">
+              </div>
+              <div class="hero-carousel__slide">
+                <img src="img/hero/cabinet3.webp" alt="Кабинет Ирк_студии" class="hero__photo">
+              </div>
+            </div>
+            <div class="stamp">🌿 в центре города</div>
+          </div>
+          <div class="hero-carousel__controls">
+            <button class="hero-carousel__btn" data-hero-prev aria-label="Предыдущее фото"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="hero-carousel__dots">
+              <button class="hero-carousel__dot is-active" data-hero-dot="0" aria-label="Фото 1"></button>
+              <button class="hero-carousel__dot" data-hero-dot="1" aria-label="Фото 2"></button>
+              <button class="hero-carousel__dot" data-hero-dot="2" aria-label="Фото 3"></button>
+            </div>
+            <button class="hero-carousel__btn" data-hero-next aria-label="Следующее фото"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
         </div>
-        <div class="stamp">🌿 в центре города</div>
       </div>
 
       <p class="hero__lead">Я Юлия — косметолог по телу с опытом 8 лет. Депиляция, LPG массаж, обёртывания — с комфортом и заботой.</p>
 
       <div class="hero__btns">
-        <a href="#contacts" class="btn btn-primary btn-lg">Записаться</a>
+        <a href="https://dikidi.net/292465" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Записаться</a>
         <a href="#services" class="btn btn-ghost btn-lg">Посмотреть услуги</a>
       </div>
 
@@ -100,10 +163,31 @@
 
     <!-- Photo column -->
     <div class="hero__photo-wrap">
-      <div class="ph ph-rose hero__photo" aria-label="Фото кабинета">
-        <span>photo · кабинет / композиция через детали</span>
+      <div class="hero-carousel" data-hero-carousel>
+        <div class="hero-carousel__window">
+          <div class="hero-carousel__track" data-hero-track>
+            <div class="hero-carousel__slide">
+              <img src="img/hero/cabinet.webp" alt="Кабинет Ирк_студии" class="hero__photo">
+            </div>
+            <div class="hero-carousel__slide">
+              <img src="img/hero/cabinet2.webp" alt="Кабинет Ирк_студии" class="hero__photo">
+            </div>
+            <div class="hero-carousel__slide">
+              <img src="img/hero/cabinet3.webp" alt="Кабинет Ирк_студии" class="hero__photo">
+            </div>
+          </div>
+          <div class="stamp">🌿 студия в центре Иркутска</div>
+        </div>
+        <div class="hero-carousel__controls">
+          <button class="hero-carousel__btn" data-hero-prev aria-label="Предыдущее фото"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="hero-carousel__dots">
+            <button class="hero-carousel__dot is-active" data-hero-dot="0" aria-label="Фото 1"></button>
+            <button class="hero-carousel__dot" data-hero-dot="1" aria-label="Фото 2"></button>
+            <button class="hero-carousel__dot" data-hero-dot="2" aria-label="Фото 3"></button>
+          </div>
+          <button class="hero-carousel__btn" data-hero-next aria-label="Следующее фото"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </div>
       </div>
-      <div class="stamp">🌿 студия в центре Иркутска</div>
     </div>
   </div>
 </section>
@@ -177,9 +261,7 @@
       <!-- Photo -->
       <div class="about__photo">
         <div class="about__photo-wrap">
-          <div class="ph ph-warm" aria-label="Фото мастера — Юлия">
-            <span>photo · about</span>
-          </div>
+          <img src="img/about/about.webp" alt="Юлия, косметолог по телу">
         </div>
       </div>
 
@@ -191,9 +273,9 @@
         <p>Ко мне возвращаются за комфортом, аккуратностью и внимательным подходом.</p>
 
         <div class="about__sig">
-          <div class="about__sig-letter" aria-hidden="true">Ю</div>
+          <div class="about__sig-icon" aria-hidden="true">🌸</div>
           <div class="about__sig-name">
-            Юлия Иркутская<br>
+            Юлия Ефремова<br>
             косметолог по телу · 8 лет практики
           </div>
         </div>
@@ -226,7 +308,7 @@
           <h3 class="svc__name">Депиляция</h3>
           <p class="svc__tag">сахар / воск</p>
           <p class="svc__desc">Бережное удаление нежелательной растительности с долгим эффектом. Подбираю метод и состав под тип кожи и чувствительность.</p>
-          <p class="svc__price">от 000 ₽</p>
+          <p class="svc__price">от 300 ₽</p>
         </div>
       </li>
 
@@ -238,23 +320,24 @@
         <div class="svc__info">
           <div class="svc__num">02</div>
           <h3 class="svc__name">LPG массаж</h3>
-          <p class="svc__tag">аппаратный массаж</p>
+          <p class="svc__tag">Антицеллюлитный аппаратный массаж</p>
           <p class="svc__desc">Аппаратный массаж для уменьшения объёмов, улучшения лимфотока и работы с отёками. Видимый результат после курса.</p>
-          <p class="svc__price">от 000 ₽</p>
+          <p class="svc__price">от 1 400 ₽</p>
         </div>
       </li>
 
       <!-- Обёртывания -->
       <li class="svc reveal">
-        <div class="ph ph-warm svc__photo" aria-label="Обёртывания">
+        <div class="ph ph-warm svc__photo" aria-label="Обёртывание">
           <span>03</span>
         </div>
         <div class="svc__info">
           <div class="svc__num">03</div>
-          <h3 class="svc__name">Обёртывания</h3>
-          <p class="svc__tag">уход для тела</p>
+          <h3 class="svc__name">Обёртывание</h3>
+          <p class="svc__tag">горячее / холодное</p>
           <p class="svc__desc">Уходовые процедуры для тела, направленные на питание кожи, моделирование и глубокое увлажнение.</p>
-          <p class="svc__price">от 000 ₽</p>
+          <p class="svc__tag svc__tag--spa">СПА уход за телом</p>
+          <p class="svc__price">от 1 200 ₽</p>
         </div>
       </li>
     </ul>
@@ -267,57 +350,21 @@
      ============================================= -->
 <section id="price" aria-labelledby="price-title">
   <div class="wrap">
+      <h2 id="price-title" class="section-title"><em>Стоимость</em></h2>
     <div class="price__inner">
-      <!-- Intro -->
-      <div class="price-intro">
-        <h2 id="price-title" class="section-title"><em>Стоимость</em></h2>
-        <p style="margin-top:16px; font-size:14px; color:var(--ink-mute); line-height:1.7;">
-          Финальная стоимость рассчитывается индивидуально на консультации — в зависимости от зоны, техники и вашего запроса.
-        </p>
-      </div>
-
-      <!-- Price list -->
-      <div>
-        <ul class="price-list" role="list">
-          <li class="price-row reveal">
-            <div class="price-row__info">
-              <div class="price-row__name">Депиляция (сахар / воск)</div>
-              <div class="price-row__sub">Голени · бикини · подмышки · руки и другие зоны</div>
-            </div>
-            <div class="price-row__val">от 000 ₽</div>
-          </li>
-          <li class="price-row reveal">
-            <div class="price-row__info">
-              <div class="price-row__name">LPG массаж</div>
-              <div class="price-row__sub">Курсом или разовый сеанс · работа с отёками и лимфой</div>
-            </div>
-            <div class="price-row__val">от 000 ₽</div>
-          </li>
-          <li class="price-row reveal">
-            <div class="price-row__info">
-              <div class="price-row__name">Обёртывания</div>
-              <div class="price-row__sub">Питательные, разогревающие, моделирующие составы</div>
-            </div>
-            <div class="price-row__val">от 000 ₽</div>
-          </li>
-          <li class="price-row reveal">
-            <div class="price-row__info">
-              <div class="price-row__name">Комбинированная программа</div>
-              <div class="price-row__sub">LPG + обёртывание · подбирается индивидуально</div>
-            </div>
-            <div class="price-row__val">от 000 ₽</div>
-          </li>
-          <li class="price-row reveal">
-            <div class="price-row__info">
-              <div class="price-row__name">Консультация перед записью</div>
-              <div class="price-row__sub">Очно или в мессенджере</div>
-            </div>
-            <div class="price-row__val free">бесплатно</div>
-          </li>
-        </ul>
-        <p class="price-note">🌿 Цены ниже — стартовые. Финальная стоимость рассчитывается на консультации в зависимости от зоны, объёма работы и подобранных материалов.</p>
+      <!-- Прайс -->
+      <div class="price-col">
+        <p class="price-col__text">С актуальными ценами на услуги можете ознакомиться в прайсе ниже.</p>
         <div class="price__cta">
-          <a href="#contacts" class="btn btn-primary btn-full">Записаться для уточнения цены</a>
+          <a href="#" class="btn btn-primary btn-full-mob">Прайс</a>
+        </div>
+      </div>
+      <!-- Написать -->
+      <div class="price-col">
+        <p class="price-col__text">Если не знаете, какую процедуру выбрать — напишите мне, я помогу.</p>
+        <div class="price__cta price__cta--btns">
+          <a href="http://t.me/milayayulka" target="_blank" rel="noopener" class="btn btn-primary btn-full-mob">Написать в Телеграм</a>
+          <a href="https://max.ru/u/f9LHodD0cOKRp_PSNI4Vc4tdtpDMohvTJwua46-cSGMHXLbPjAWfrtOYUVc" target="_blank" rel="noopener" class="btn btn-ghost btn-full-mob">Написать в Макс</a>
         </div>
       </div>
     </div>
@@ -338,106 +385,180 @@
     </div>
 
     <div class="results-grid">
-      <!-- 1 -->
-      <div class="ba-card reveal">
-        <div class="ba-pair">
-          <div class="ba-half">
-            <div class="ph ph-rose"><span>до</span></div>
-            <span class="ba-label">до</span>
+      <!-- 1 — Анна, карусель -->
+      <div class="ba-card--carousel reveal">
+        <div class="ba-carousel" data-hero-carousel data-hero-noauto>
+          <div class="ba-carousel__window">
+            <div class="ba-carousel__track" data-hero-track>
+              <div class="ba-carousel__slide">
+                <div class="ba-carousel__frame">
+                  <img src="img/results/do_posle_anna.webp" alt="Анна до и после LPG, фото 1" class="ba-carousel__img" loading="lazy">
+                  <span class="ba-badge ba-badge--before">до</span>
+                  <span class="ba-badge ba-badge--after">после</span>
+                </div>
+              </div>
+              <div class="ba-carousel__slide">
+                <div class="ba-carousel__frame">
+                  <img src="img/results/do_posle_anna2.webp" alt="Анна до и после LPG, фото 2" class="ba-carousel__img" loading="lazy">
+                  <span class="ba-badge ba-badge--before">до</span>
+                  <span class="ba-badge ba-badge--after">после</span>
+                </div>
+              </div>
+              <div class="ba-carousel__slide">
+                <div class="ba-carousel__frame">
+                  <img src="img/results/do_posle_anna3.webp" alt="Анна до и после LPG, фото 3" class="ba-carousel__img" loading="lazy">
+                  <span class="ba-badge ba-badge--before">до</span>
+                  <span class="ba-badge ba-badge--after">после</span>
+                </div>
+              </div>
+              <div class="ba-carousel__slide">
+                <div class="ba-carousel__frame">
+                  <img src="img/results/do_posle_anna4.webp" alt="Анна до и после LPG, фото 4" class="ba-carousel__img" loading="lazy">
+                  <span class="ba-badge ba-badge--before">до</span>
+                  <span class="ba-badge ba-badge--after">после</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="ba-half">
-            <div class="ph ph-ivory"><span>после</span></div>
-            <span class="ba-label after">после</span>
+          <div class="ba-carousel__controls">
+            <button class="ba-carousel__btn" data-hero-prev aria-label="Предыдущее фото"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="ba-carousel__dots">
+              <button class="ba-carousel__dot is-active" data-hero-dot="0" aria-label="Фото 1"></button>
+              <button class="ba-carousel__dot" data-hero-dot="1" aria-label="Фото 2"></button>
+              <button class="ba-carousel__dot" data-hero-dot="2" aria-label="Фото 3"></button>
+              <button class="ba-carousel__dot" data-hero-dot="3" aria-label="Фото 4"></button>
+            </div>
+            <button class="ba-carousel__btn" data-hero-next aria-label="Следующее фото"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
           </div>
-        </div>
-        <div class="ba-foot">
-          <div class="ba-foot__name">Анна, 34</div>
-          <div class="ba-foot__proc">LPG · 6 сеансов</div>
+          <div class="ba-foot">
+            <div class="ba-foot__name">Анна, 43 года</div>
+            <div class="ba-foot__proc">LPG · 10 сеансов</div>
+          </div>
         </div>
       </div>
-      <!-- 2 -->
-      <div class="ba-card reveal">
-        <div class="ba-pair">
-          <div class="ba-half">
-            <div class="ph ph-warm"><span>до</span></div>
-            <span class="ba-label">до</span>
+      <!-- 2 — Алёна, карусель -->
+      <div class="ba-card--carousel reveal">
+        <div class="ba-carousel" data-hero-carousel data-hero-noauto>
+          <div class="ba-carousel__window">
+            <div class="ba-carousel__track" data-hero-track>
+              <div class="ba-carousel__slide">
+                <div class="ba-carousel__frame">
+                  <img src="img/results/do_posle_alena.webp" alt="Алёна до и после LPG, фото 1" class="ba-carousel__img" loading="lazy">
+                  <span class="ba-badge ba-badge--before">до</span>
+                  <span class="ba-badge ba-badge--after">после</span>
+                </div>
+              </div>
+              <div class="ba-carousel__slide">
+                <div class="ba-carousel__frame">
+                  <img src="img/results/do_posle_alena1.webp" alt="Алёна до и после LPG, фото 2" class="ba-carousel__img" loading="lazy">
+                  <span class="ba-badge ba-badge--before">до</span>
+                  <span class="ba-badge ba-badge--after">после</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="ba-half">
-            <div class="ph ph-ivory"><span>после</span></div>
-            <span class="ba-label after">после</span>
+          <div class="ba-carousel__controls">
+            <button class="ba-carousel__btn" data-hero-prev aria-label="Предыдущее фото"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <div class="ba-carousel__dots">
+              <button class="ba-carousel__dot is-active" data-hero-dot="0" aria-label="Фото 1"></button>
+              <button class="ba-carousel__dot" data-hero-dot="1" aria-label="Фото 2"></button>
+            </div>
+            <button class="ba-carousel__btn" data-hero-next aria-label="Следующее фото"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
           </div>
-        </div>
-        <div class="ba-foot">
-          <div class="ba-foot__name">Мария, 29</div>
-          <div class="ba-foot__proc">Обёртывания · курс</div>
+          <div class="ba-foot">
+            <div class="ba-foot__name">Алёна, 36 лет</div>
+            <div class="ba-foot__proc">LPG · 8 сеансов</div>
+          </div>
         </div>
       </div>
-      <!-- 3 -->
-      <div class="ba-card reveal">
-        <div class="ba-pair">
-          <div class="ba-half">
-            <div class="ph ph-rose"><span>до</span></div>
-            <span class="ba-label">до</span>
+      <!-- 3 — Тамара, одно фото -->
+      <div class="ba-card--carousel reveal">
+        <div class="ba-carousel">
+          <div class="ba-carousel__window">
+            <div class="ba-carousel__frame">
+              <img src="img/results/do_posle_tamara.webp" alt="Тамара до и после LPG" class="ba-carousel__img" loading="lazy">
+              <span class="ba-badge ba-badge--before">до</span>
+              <span class="ba-badge ba-badge--after">после</span>
+            </div>
           </div>
-          <div class="ba-half">
-            <div class="ph ph-warm"><span>после</span></div>
-            <span class="ba-label after">после</span>
+          <div class="ba-foot" style="padding: 10px 4px 12px;">
+            <div class="ba-foot__name">Тамара, 50 лет</div>
+            <div class="ba-foot__proc">LPG · 15 сеансов</div>
           </div>
-        </div>
-        <div class="ba-foot">
-          <div class="ba-foot__name">Ольга, 42</div>
-          <div class="ba-foot__proc">LPG + обёртывания</div>
         </div>
       </div>
-      <!-- 4 -->
-      <div class="ba-card reveal">
-        <div class="ba-pair">
-          <div class="ba-half">
-            <div class="ph ph-ivory"><span>до</span></div>
-            <span class="ba-label">до</span>
+      <!-- 4 — Анна, депиляция голени -->
+      <div class="ba-card--carousel reveal">
+        <div class="ba-carousel">
+          <div class="ba-carousel__window">
+            <div class="ba-carousel__frame">
+              <img src="img/results/depi_do_posle3.webp" alt="Анна до и после депиляции голени" class="ba-carousel__img" loading="lazy">
+              <span class="ba-badge ba-badge--before">до</span>
+              <span class="ba-badge ba-badge--after">после</span>
+            </div>
           </div>
-          <div class="ba-half">
-            <div class="ph ph-rose"><span>после</span></div>
-            <span class="ba-label after">после</span>
+          <div class="ba-foot">
+            <div class="ba-foot__name">Анна, 23</div>
+            <div class="ba-foot__proc">Депиляция голени</div>
           </div>
-        </div>
-        <div class="ba-foot">
-          <div class="ba-foot__name">Елена, 38</div>
-          <div class="ba-foot__proc">LPG · работа с лимфой</div>
         </div>
       </div>
-      <!-- 5 -->
-      <div class="ba-card reveal">
-        <div class="ba-pair">
-          <div class="ba-half">
-            <div class="ph ph-warm"><span>до</span></div>
-            <span class="ba-label">до</span>
+      <!-- 5 — Вера, депиляция рук -->
+      <div class="ba-card--carousel reveal">
+        <div class="ba-carousel">
+          <div class="ba-carousel__window">
+            <div class="ba-carousel__frame">
+              <img src="img/results/depi_do_posle4.webp" alt="Вера до и после депиляции рук" class="ba-carousel__img" loading="lazy">
+              <span class="ba-badge ba-badge--before">до</span>
+              <span class="ba-badge ba-badge--after">после</span>
+            </div>
           </div>
-          <div class="ba-half">
-            <div class="ph ph-ivory"><span>после</span></div>
-            <span class="ba-label after">после</span>
+          <div class="ba-foot">
+            <div class="ba-foot__name">Вера, 28</div>
+            <div class="ba-foot__proc">Депиляция рук</div>
           </div>
-        </div>
-        <div class="ba-foot">
-          <div class="ba-foot__name">Дарья, 27</div>
-          <div class="ba-foot__proc">Депиляция · курсом</div>
         </div>
       </div>
-      <!-- 6 -->
-      <div class="ba-card reveal">
-        <div class="ba-pair">
-          <div class="ba-half">
-            <div class="ph ph-rose"><span>до</span></div>
-            <span class="ba-label">до</span>
+      <!-- 6 — Ружана, депиляция рук -->
+      <div class="ba-card--carousel reveal">
+        <div class="ba-carousel">
+          <div class="ba-carousel__window">
+            <div class="ba-pair">
+              <div class="ba-half">
+                <img src="img/results/depi_do1.webp" alt="Ружана до депиляции рук" class="ba-pair__img" loading="lazy">
+                <span class="ba-label">до</span>
+              </div>
+              <div class="ba-half">
+                <img src="img/results/depi_posle1.webp" alt="Ружана после депиляции рук" class="ba-pair__img" loading="lazy">
+                <span class="ba-label after">после</span>
+              </div>
+            </div>
           </div>
-          <div class="ba-half">
-            <div class="ph ph-warm"><span>после</span></div>
-            <span class="ba-label after">после</span>
+          <div class="ba-foot">
+            <div class="ba-foot__name">Ружана, 24</div>
+            <div class="ba-foot__proc">Депиляция рук</div>
           </div>
         </div>
-        <div class="ba-foot">
-          <div class="ba-foot__name">Светлана, 45</div>
-          <div class="ba-foot__proc">Комплексная программа</div>
+      </div>
+      <!-- 7 — Марина, депиляция бёдер -->
+      <div class="ba-card--carousel reveal">
+        <div class="ba-carousel">
+          <div class="ba-carousel__window">
+            <div class="ba-pair">
+              <div class="ba-half">
+                <img src="img/results/depi_do2.webp" alt="Марина до депиляции бёдер" class="ba-pair__img" loading="lazy">
+                <span class="ba-label">до</span>
+              </div>
+              <div class="ba-half">
+                <img src="img/results/depi_posle2.webp" alt="Марина после депиляции бёдер" class="ba-pair__img" loading="lazy">
+                <span class="ba-label after">после</span>
+              </div>
+            </div>
+          </div>
+          <div class="ba-foot">
+            <div class="ba-foot__name">Марина, 43</div>
+            <div class="ba-foot__proc">Депиляция бёдер</div>
+          </div>
         </div>
       </div>
     </div>
@@ -612,21 +733,21 @@
           <div class="info-block__icon" aria-hidden="true">📍</div>
           <div>
             <div class="info-block__label">Адрес</div>
-            <div class="info-block__val">г. Иркутск, ул. Декабрьских событий, 47Б</div>
+            <div class="info-block__val">г. Иркутск, ул. Декабрьских событий, 47Б<br>7 этаж, 701 офис</div>
           </div>
         </div>
         <div class="info-block">
           <div class="info-block__icon" aria-hidden="true">🕐</div>
           <div>
             <div class="info-block__label">Часы работы</div>
-            <div class="info-block__val">Пн–Сб · 10:00 — 20:00<br>Вс · по записи</div>
+            <div class="info-block__val">Ежедневно 10:00–20:00<br>По предварительной записи</div>
           </div>
         </div>
         <div class="info-block">
           <div class="info-block__icon" aria-hidden="true">📞</div>
           <div>
             <div class="info-block__label">Телефон</div>
-            <div class="info-block__val"><a href="tel:+79140000000">+7 914 000-00-00</a></div>
+            <div class="info-block__val"><a href="tel:+79500809535">8 950 080-95-35</a></div>
           </div>
         </div>
         <div class="info-block">
@@ -634,9 +755,10 @@
           <div>
             <div class="info-block__label">Мессенджеры</div>
             <div class="msg-pills">
-              <a href="https://wa.me/79140000000" class="msg-pill msg-pill--wa" target="_blank" rel="noopener" aria-label="WhatsApp">WhatsApp</a>
-              <a href="https://t.me/irk_studio" class="msg-pill msg-pill--tg" target="_blank" rel="noopener" aria-label="Telegram">Telegram</a>
-              <a href="https://instagram.com/irk_studio" class="msg-pill msg-pill--ig" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+              <a href="http://t.me/milayayulka" class="msg-pill msg-pill--tg" target="_blank" rel="noopener" aria-label="Telegram"><img src="img/icons/tg.svg" width="14" height="14" alt="">Telegram</a>
+              <a href="https://max.ru/u/f9LHodD0cOKRp_PSNI4Vc4tdtpDMohvTJwua46-cSGMHXLbPjAWfrtOYUVc" class="msg-pill msg-pill--max" target="_blank" rel="noopener" aria-label="Макс">Макс</a>
+              <a href="https://www.instagram.com/irk_studio?igsh=dnk5NGN5ZXF3c3d6" class="msg-pill msg-pill--ig" target="_blank" rel="noopener" aria-label="Instagram"><img src="img/icons/insta.svg" width="14" height="14" alt="">Instagram</a>
+              <a href="https://vk.ru/irk__studio" class="msg-pill msg-pill--vk" target="_blank" rel="noopener" aria-label="ВКонтакте"><img src="img/icons/vk.svg" width="14" height="14" alt="">ВКонтакте</a>
             </div>
           </div>
         </div>
@@ -645,20 +767,24 @@
       <!-- CTA card -->
       <div class="cta-card reveal" role="complementary" aria-label="Запись">
         <h3>В один клик — и я на связи</h3>
-        <p>Напишите мне в WhatsApp — расскажите, что вас интересует, и я подберу удобное время для визита или онлайн-консультации.</p>
-        <a href="https://wa.me/79140000000" class="btn btn-white" target="_blank" rel="noopener">Написать в WhatsApp</a>
+        <p>Напишите мне в удобный мессенджер — расскажите, что вас интересует, и я подберу удобное время для визита или онлайн-консультации.</p>
+        <div class="cta-card__btns">
+          <a href="http://t.me/milayayulka" class="btn btn-white" target="_blank" rel="noopener">Написать в Telegram</a>
+          <a href="https://max.ru/u/f9LHodD0cOKRp_PSNI4Vc4tdtpDMohvTJwua46-cSGMHXLbPjAWfrtOYUVc" class="btn btn-white" target="_blank" rel="noopener">Написать в Макс</a>
+        </div>
       </div>
     </div>
 
-    <!-- Map placeholder -->
-    <div class="map-placeholder reveal" role="img" aria-label="Карта расположения кабинета">
-      <div class="map-marker" aria-hidden="true"></div>
-      <div class="map-placeholder__label" aria-hidden="true">map · 2gis / yandex embed</div>
-      <div class="map-addr-card" aria-hidden="true">
-        <strong>Ирк_студия</strong>
-        ул. Декабрьских событий, 47Б<br>
-        г. Иркутск
+    <!-- Map link -->
+    <div class="map-link-block reveal">
+      <div class="map-link-addr">
+        <span class="map-link-addr__icon" aria-hidden="true">📍</span>
+        <div>
+          <div class="map-link-addr__main">г. Иркутск, ул. Декабрьских событий, 47Б</div>
+          <div class="map-link-addr__sub">7 этаж, 701 офис</div>
+        </div>
       </div>
+      <a href="https://2gis.ru/irkutsk/search/ул.%20Декабрьских%20событий%2047Б" class="btn btn-ghost" target="_blank" rel="noopener">Открыть на карте 2ГИС</a>
     </div>
   </div>
 </section>
@@ -676,7 +802,7 @@
           <div class="footer__logo-icon" aria-hidden="true">и</div>
           <span class="footer__logo-name">Ирк_студия</span>
         </div>
-        <p class="footer__desc">Частный косметолог по телу.<br>Иркутск, ул. Декабрьских событий, 47Б.</p>
+        <p class="footer__desc">Ваш косметолог по телу.<br>Иркутск, ул. Декабрьских событий, 47Б, 701 офис, 7 этаж.</p>
       </div>
 
       <!-- Footer cols (mobile: 2-col grid; desktop: individual columns via display:contents) -->
@@ -696,27 +822,25 @@
         <div class="footer-col">
           <div class="footer-col__title">Контакты</div>
           <ul>
-            <li><a href="tel:+79140000000">+7 914 000-00-00</a></li>
-            <li><a href="https://wa.me/79140000000" target="_blank" rel="noopener">WhatsApp</a></li>
-            <li><a href="https://t.me/irk_studio" target="_blank" rel="noopener">Telegram</a></li>
-            <li><a href="https://instagram.com/irk_studio" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="tel:+79500809535">8 950 080-95-35</a></li>
+            <li><a href="http://t.me/milayayulka" target="_blank" rel="noopener">Telegram</a></li>
+            <li><a href="https://max.ru/u/f9LHodD0cOKRp_PSNI4Vc4tdtpDMohvTJwua46-cSGMHXLbPjAWfrtOYUVc" target="_blank" rel="noopener">Макс</a></li>
+            <li><a href="https://www.instagram.com/irk_studio?igsh=dnk5NGN5ZXF3c3d6" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://vk.ru/irk__studio" target="_blank" rel="noopener">ВК сообщество</a></li>
+            <li><a href="https://dikidi.net/292465" target="_blank" rel="noopener">Онлайн запись</a></li>
           </ul>
         </div>
 
         <!-- Часы -->
         <div class="footer-col">
           <div class="footer-col__title">Часы работы</div>
-          <p>Пн–Сб · 10:00 — 20:00<br>Вс · по записи</p>
+          <p>Ежедневно с 10:00–20:00<br>По предварительной записи</p>
         </div>
       </div>
     </div>
 
     <div class="footer__bottom">
       <div>© 2026 · Ирк_студия · Юлия, косметолог по телу</div>
-      <div class="footer__bottom-links">
-        <a href="#">Политика конфиденциальности</a>
-        <a href="#">Согласие на обработку данных</a>
-      </div>
     </div>
   </div>
 </footer>
@@ -726,8 +850,8 @@
      FLOAT CTA (mobile)
      ============================================= -->
 <div class="float-cta" role="complementary" aria-label="Быстрая запись">
-  <a href="https://wa.me/79140000000" class="btn btn-primary" target="_blank" rel="noopener">
-    Записаться в WhatsApp
+  <a href="https://dikidi.net/292465" class="btn btn-primary" target="_blank" rel="noopener">
+    Записаться онлайн
   </a>
 </div>
 

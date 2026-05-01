@@ -186,22 +186,90 @@
   window.addEventListener('resize', initCarousel);
 
 
-  /* ---------- 5. Float CTA — скрывать при скролле к контактам ---------- */
+  /* ---------- 5. Hero carousel ---------- */
+  function initHeroCarousel(carousel) {
+    var track = carousel.querySelector('[data-hero-track]');
+    var slides = Array.from(carousel.querySelectorAll('.hero-carousel__slide, .ba-carousel__slide'));
+    var dots = Array.from(carousel.querySelectorAll('[data-hero-dot]'));
+    var btnPrev = carousel.querySelector('[data-hero-prev]');
+    var btnNext = carousel.querySelector('[data-hero-next]');
+    var total = slides.length;
+    var current = 0;
+    var autoTimer = null;
+
+    function goTo(idx) {
+      current = (idx + total) % total;
+      track.style.transform = 'translateX(-' + (current * 100) + '%)';
+      dots.forEach(function (d, i) {
+        d.classList.toggle('is-active', i === current);
+      });
+    }
+
+    function startAuto() {
+      autoTimer = setInterval(function () { goTo(current + 1); }, 4000);
+    }
+
+    function resetAuto() {
+      clearInterval(autoTimer);
+      startAuto();
+    }
+
+    if (btnPrev) {
+      btnPrev.addEventListener('click', function () { goTo(current - 1); resetAuto(); });
+    }
+    if (btnNext) {
+      btnNext.addEventListener('click', function () { goTo(current + 1); resetAuto(); });
+    }
+    dots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        goTo(parseInt(dot.getAttribute('data-hero-dot'), 10));
+        resetAuto();
+      });
+    });
+
+    var touchStartX = 0;
+    carousel.addEventListener('touchstart', function (e) {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    carousel.addEventListener('touchend', function (e) {
+      var dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) {
+        goTo(dx < 0 ? current + 1 : current - 1);
+        resetAuto();
+      }
+    }, { passive: true });
+
+    goTo(0);
+    if (!carousel.hasAttribute('data-hero-noauto')) startAuto();
+  }
+
+  $$('[data-hero-carousel], [data-hero-carousel-mob]').forEach(function (carousel) {
+    initHeroCarousel(carousel);
+  });
+
+
+  /* ---------- 7. Float CTA — скрывать при скролле к контактам и футеру ---------- */
   var floatCta = $('.float-cta');
   var contactsSection = $('#contacts');
+  var footerEl = $('footer');
 
-  if (floatCta && contactsSection && 'IntersectionObserver' in window) {
+  if (floatCta && 'IntersectionObserver' in window) {
+    var ctaVisible = { contacts: false, footer: false };
     var ctaObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        floatCta.style.opacity = entry.isIntersecting ? '0' : '1';
-        floatCta.style.pointerEvents = entry.isIntersecting ? 'none' : '';
+        if (entry.target.id === 'contacts') ctaVisible.contacts = entry.isIntersecting;
+        if (entry.target.tagName === 'FOOTER') ctaVisible.footer = entry.isIntersecting;
       });
-    }, { threshold: 0.1 });
-    ctaObserver.observe(contactsSection);
+      var hide = ctaVisible.contacts || ctaVisible.footer;
+      floatCta.style.opacity = hide ? '0' : '1';
+      floatCta.style.pointerEvents = hide ? 'none' : '';
+    }, { threshold: 0.05 });
+    if (contactsSection) ctaObserver.observe(contactsSection);
+    if (footerEl) ctaObserver.observe(footerEl);
   }
 
 
-  /* ---------- 6. Активная ссылка в навигации при скролле ---------- */
+  /* ---------- 8. Активная ссылка в навигации при скролле ---------- */
   var navLinks = $$('.nav__links a');
   var sections = navLinks.map(function (a) {
     var id = a.getAttribute('href');
