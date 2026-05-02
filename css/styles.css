@@ -186,19 +186,12 @@ p { color: var(--ink-soft); line-height: 1.7; }
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-family: var(--serif);
-  font-size: 18px;
-  font-style: italic;
+  object-fit: cover;
   flex-shrink: 0;
 }
 .nav__logo-name {
   font-family: 'Great Vibes', cursive;
-  font-size: 28px;
+  font-size: 20px;
   color: var(--ink);
   letter-spacing: 0.01em;
 }
@@ -1131,19 +1124,13 @@ footer {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-family: var(--serif);
-  font-size: 16px;
-  font-style: italic;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 .footer__logo-name {
-  font-family: var(--serif);
-  font-size: 16px;
-  color: rgba(255,255,255,0.85);
+  font-family: 'Great Vibes', cursive;
+  font-size: 20px;
+  color: var(--white);
 }
 .footer__desc {
   font-size: 13px;
@@ -1281,7 +1268,7 @@ footer {
   .cta-card p { font-size: 15px; }
 
   /* Футер */
-  .footer__logo-name { font-size: 17px; }
+  .footer__logo-name { font-size: 20px; }
   .footer__desc { font-size: 14px; }
   .footer-col__title { font-size: 12px; }
   .footer-col a,
